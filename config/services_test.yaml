@@ -1,0 +1,7 @@
+imports:
+  - { resource: services.yaml }
+
+services:
+  App\Recipe\Domain\Port\Gateway\RecipeGateway:
+    class: 'App\Recipe\Infrastructure\Persistence\InMemory\InMemoryRecipeRepository'
+    public: true
